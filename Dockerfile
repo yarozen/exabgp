@@ -2,8 +2,7 @@ FROM alpine:latest
   
 MAINTAINER Yaniv Rozenboim <yanivr@radware.com>
 
-
-RUN apk add --no-cache bash python py-pip \ 
+RUN apk add --no-cache bash python py-pip \
     && pip install --upgrade pip \ 
     && pip install exabgp \
     && mkdir -p /etc/exabgp \
